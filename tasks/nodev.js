@@ -33,9 +33,9 @@ module.exports = function (grunt) {
       });
       grunt.file.write('.nodevignore', fileContent);
     }
-    else if (grunt.file.exists('.nodevignore') && grunt.file.read('.nodevignore').indexOf(nodevignoreMessage) === 0){
-      grunt.file.delete('.nodevignore');
-    }
+    // else if (grunt.file.exists('.nodevignore') && grunt.file.read('.nodevignore').indexOf(nodevignoreMessage) === 0){
+    //   grunt.file.delete('.nodevignore');
+    // }
 
     if (options.watchedFolders) {
       options.watchedFolders.forEach(function (folder) {

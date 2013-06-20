@@ -1,6 +1,6 @@
 {
   "name": "grunt-nodev",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Grunt task to run a nodev monitor of your node.js server",
   "main": "test/server.js",
   "scripts": {

@@ -77,9 +77,10 @@ Type: `Array` of `string globs`
 This is a list of ignored files specified by a glob pattern. [Here](https://github.com/remy/nodev#ignoring-files) is an explanation of how to use the patterns to ignore files. This task will create a `.nodevignore` file in your repo based on these settings which nodev reads when it starts.
 
 ### watchedExtensions
-Type: `Array` of `strings`
+*** THIS IS NOT WORKING AT PRESENT ***
+<!-- Type: `Array` of `strings`
 
-This is a list of file extensions to watch for changes. By default, nodev watches `.js`, `.coffee`, and `.litcoffee` files.
+This is a list of file extensions to watch for changes. By default, nodev watches `.js`, `.coffee`, and `.litcoffee` files. -->
 
 ### watchedFolders
 Type: `Array` of `strings` Default: `'.'`
@@ -104,4 +105,5 @@ You can use nodev to execute a command outside of node. Use this option to speci
 # Changelog
 
 **0.0.0** - Initial release
+**0.0.1** - ReadMe update to exclude Watched Extensions
 

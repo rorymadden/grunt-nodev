@@ -8,7 +8,7 @@ module.exports = function(grunt) {
           ignoredFiles: ['README.md', 'node_modules/**'],
           // watchedExtensions: ['js', 'coffee'],
           watchedFolders: ['test', 'tasks'],
-          debug: true,
+          debug: false,
           delayTime: 1
         }
       },
