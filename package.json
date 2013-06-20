@@ -1,0 +1,31 @@
+{
+  "name": "grunt-nodev",
+  "version": "0.0.0",
+  "description": "Grunt task to run a nodev monitor of your node.js server",
+  "main": "test/server.js",
+  "scripts": {
+    "test": "grunt nodev:exec & sleep 1s;kill -9 `pgrep node`; grunt nodev:prod & sleep 1s; kill -9 `pgrep node`; grunt simplemocha:test1;grunt nodev:exec & sleep 1s;kill -9 `pgrep node`;grunt simplemocha:test2;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rorymadden/grunt-nodev.git"
+  },
+  "keywords": [
+    "gruntplugin",
+    "nodev",
+    "server"
+  ],
+  "author": "Rory Madden",
+  "license": "MIT",
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-simple-mocha": "~0.4.0",
+    "should": "~1.2.2"
+  },
+  "dependencies": {
+    "nodev": "~0.7.3"
+  }
+}
