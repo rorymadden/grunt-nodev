@@ -54,6 +54,12 @@ module.exports = function (grunt) {
     }
 
     if (options.debug) command.push('--debug');
+        
+    if (options.nodeArgs) {
+      options.nodeArgs.forEach(function (arg) {
+        command.push(arg);
+      });
+    }
 
     if (options.file) command.push(options.file);
 
